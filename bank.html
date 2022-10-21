@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css link  -->
+    <link rel="stylesheet" href="style/style.css">
+    <!-- tailwind css link-->
+    <script
+        src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-20"
+            id="tital">
+            Let's get some
+            <span
+                class="text-orange-600 text-purple-700">Mooooney</span>!!
+        </h1>
+    </header>
+    <main class="w-3/4 mx-auto">
+        <!-- get amoount part -->
+        <section class="mt-10">
+            <div class="grid grid-cols-3 gap-4 text-white "
+                id="responsiv">
+                <div
+                    class="bg-teal-300 p-8 rounded ">
+                    <h3 class="text-2xl">Deposit
+                    </h3>
+                    <h4 class="text-4xl">$<span
+                            id="deposit-amount">00</span>
+                    </h4>
+                </div>
+                <div
+                    class="bg-orange-300 p-8 rounded ">
+                    <h3 class="text-2xl">Witdraw
+                    </h3>
+                    <h4 class="text-4xl">$<span
+                            id="deposit-Witdarw">00</span>
+                    </h4>
+                </div>
+                <div
+                    class="bg-rose-300 p-8 rounded ">
+                    <h3 class="text-2xl">Balance
+                    </h3>
+                    <h4 class="text-4xl">$<span
+                            id="balance-deposit">1200</span>
+                    </h4>
+                </div>
+
+            </div>
+        </section>
+        <!-- get deposit and witdraw -->
+        <section>
+            <div class="grid grid-cols-2 gap-4"
+                id="input">
+                <!-- get user deposit -->
+                <div
+                    class="bg-red-100 mt-8 p-8 rounded">
+                    <h3 class="text-2xl">
+                        Deposit
+                    </h3>
+                    <!-- get user email -->
+                    <input id="deposit-input"
+                        class="border border-slate-400 rounded block w-3/4 mb-5 px-3 mt-3"
+                        type="text" name="" id=""
+                        placeholder="& get your deposit amount">
+                    <!-- get user button -->
+                    <button id="deposit-button"
+                        class="bg-orange-400 px-2 py-1 text-white rounded">Deposit</button>
+                </div>
+                <!-- get user witdraw -->
+                <div
+                    class="bg-red-100 mt-8 p-8 rounded">
+                    <h3 class="text-2xl">
+                        Witdraw
+                    </h3>
+                    <!-- get user email -->
+                    <input id="witdraw-input"
+                        class="border border-slate-400 rounded block w-3/4 mb-5 px-3 mt-3"
+                        type="text" name="" id=""
+                        placeholder="& get your witdraw amount">
+                    <!-- get user button -->
+                    <button id="witdraw-button"
+                        class="bg-orange-400 px-2 py-1 text-white rounded">Witdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- get js link  -->
+    <script src="js/bankink.js"></script>
+</body>
+
+</html>

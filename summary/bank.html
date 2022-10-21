@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Bankikng</title>
+    <!-- get the tailwind link -->
+    <script
+        src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- get the header tital  -->
+    <header>
+        <h1 class="text-5xl text-center mt-8">
+            Let's get some <span
+                class="text-violet-700 font-bold">Mooooney</span>
+            !!</h1>
+    </header>
+
+    <main class="w-3/4 mx-auto">
+        <!-- get the bankink acound section-->
+        <section>
+            <div class="grid grid-cols-3 gap-4 ">
+                <!-- grid cols -01 -->
+                <div
+                    class="bg-teal-300	 text-white mt-8 p-8 rounded text-center">
+                    <h3 class="text-3xl">Depisit
+                    </h3>
+                    <h4 class="text-4xl ">
+                        $<span
+                            id="deposit-amount">00</span>
+                    </h4>
+                </div>
+                <!-- grid cols -02 -->
+                <div
+                    class="bg-orange-300 text-white mt-8 p-8 rounded text-center">
+                    <h3 class="text-3xl">Witdrow
+                    </h3>
+                    <h4 class="text-4xl ">
+                        $ <span
+                            id="witdrow-amouts">00</span>
+                    </h4>
+                </div>
+                <!-- grid cols -03 -->
+                <div
+                    class="bg-red-300 text-white mt-8 p-8 rounded text-center">
+                    <h3 class="text-3xl">Balance
+                    </h3>
+                    <h4 class="text-4xl ">
+                        $<span
+                            id="balance-amount">1200</span>
+                    </h4>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="grid grid-cols-2 gap-4">
+                <!-- get the deposit frome -->
+                <div
+                    class="bg-amber-100 mt-8	p-10">
+                    <h3
+                        class="text-2xl font-bold">
+                        Deposit
+                    </h3>
+                    <!-- get user input Text-->
+                    <input id="deposit-input"
+                        class="border border-slate-300 w-3/4 rounded pl-3 mt-3 mb-3 block"
+                        type="email" name=""
+                        placeholder="$ get a deposit Amount">
+                    <button id="deposit-button"
+                        class="text-1xl bg-orange-400 px-4 py-2 text-white rounded-3xl	">Deposit</button>
+                </div>
+                <!-- get the witdrow frome -->
+                <div
+                    class="bg-amber-100 mt-8	p-10">
+                    <h3
+                        class="text-2xl font-bold">
+                        Witdrow
+                    </h3>
+                    <!-- get user input Text-->
+                    <input id="witdrow-input"
+                        class="border border-slate-300 w-3/4 rounded pl-3 mt-3 mb-3 block"
+                        type="email" name=""
+                        placeholder="$ get a witdrow Amount">
+                    <button id="witdrow-button"
+                        class="text-1xl bg-orange-400 px-4 py-2 text-white rounded-3xl">Witdrow</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/bank.js"></script>
+</body>
+
+</html>
